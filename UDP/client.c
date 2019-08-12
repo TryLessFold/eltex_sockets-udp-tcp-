@@ -10,7 +10,7 @@ int main()
 	struct sockaddr_in serv;
 	serv.sin_family = AF_INET;
 	serv.sin_port = htons(5561);
-	serv.sin_addr.s_addr = inet_addr("127.0.0.1");
+	serv.sin_addr.s_addr = inet_addr("91.196.245.199");
 	int fd;
 	char buff[256];
 	fgets(buff, 256, stdin);

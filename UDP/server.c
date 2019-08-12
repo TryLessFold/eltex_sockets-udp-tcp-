@@ -23,7 +23,7 @@ int main()
 	int cl_size = 0;
 	serv.sin_family = AF_INET;
 	serv.sin_port = htons(5561);
-	serv.sin_addr.s_addr = inet_addr("127.0.0.1");
+	serv.sin_addr.s_addr = INADDR_ANY;
 	bind(fd, (struct sockaddr*) &serv, sizeof(serv));
 	while(1)
 	{
